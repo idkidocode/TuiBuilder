@@ -31,7 +31,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE TuiBuilder)
 ## Menu Builder
 You need ncures initialized for the following code to function as intended
 
-To use the menu build you can create a class like this
+To use the menu builder you can create a variable like this
 
 ```c++
 TuiBuilder::MenuBuilder menu;

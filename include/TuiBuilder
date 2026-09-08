@@ -1,3 +1,4 @@
 #pragma once
 
 #include "MenuBuilder/MenuBuilder.hpp"
+#include "ProgressBar/ProgressBar.hpp"
