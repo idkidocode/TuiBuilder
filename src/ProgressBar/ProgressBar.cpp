@@ -7,9 +7,11 @@ namespace TuiBuilder {
         refresh();
     }
 
-    void ProgressBar::Update(float progress) {
+    void ProgressBar::Render(float progress) {
         this->progress = progress;
-        int filledLength = static_cast<int>(progress * 20); // Assuming the bar has 20 segments
+
+        int filledLength = static_cast<int>((progress / 100.0f) * 20);
+
         mvprintw(y, x, "[");
         for (int i = 0; i < 20; ++i) {
             if (i < filledLength) {
@@ -19,6 +21,7 @@ namespace TuiBuilder {
             }
         }
         addch(']');
+
         refresh();
     }
 }

@@ -4,7 +4,7 @@ namespace TuiBuilder {
     class ProgressBar {
     public:
         ProgressBar(int x, int y);
-        void Update(float progress);
+        void Render(float progress);
         float getProgress() const { return progress; }
     private:
         int x;
