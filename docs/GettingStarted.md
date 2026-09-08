@@ -1,4 +1,10 @@
 # Getting Started With TuiBuilder
+## Requirements
+
+* C++17 or newer
+* CMake 3.15+
+* ncurses
+
 
 To get started with TuiBuilder you must add it to cmake
 ```cmake
