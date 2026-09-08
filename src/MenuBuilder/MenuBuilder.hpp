@@ -12,9 +12,7 @@ namespace TuiBuilder {
         void SetActions(const std::vector<std::function<void()>>& act);
         void SetEndChar(const std::string& end);
 
-        void Init();
         void Update();
-        void End();
 
     private:
         std::string endChar = "q";

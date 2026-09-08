@@ -15,15 +15,6 @@ namespace TuiBuilder {
         endChar = end;
     }
 
-    void MenuBuilder::Init()
-    {
-        initscr();
-        cbreak();
-        noecho();
-        curs_set(0);
-        keypad(stdscr, true);
-    }
-
     void MenuBuilder::Update()
     {
         while (true) {
@@ -55,10 +46,5 @@ namespace TuiBuilder {
                 getch();
             }
         }
-    }
-
-    void MenuBuilder::End()
-    {
-        endwin();
     }
 }
