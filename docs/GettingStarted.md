@@ -54,9 +54,9 @@ menu.SetEndChar("q"); //Will change what button is used to exit the menu, defaul
 
 The Update loop for the menu is:
 ```c++
-menuBuilder.Init(); //Initialize the menu(ncurses)
+menuBuilder.Init(); //Initialize the menu(assuming ncurses is already initialized)
     menuBuilder.Update(); //Update the menu and wait for user input
-menuBuilder.End(); //End the menu
+menuBuilder.End(); //End the menu(assuming ncurses doesnt already have an 'endwin()' call))
 ```
 
 So your full main function will look something like this:

@@ -20,9 +20,3 @@ target_include_directories(TuiBuilder PUBLIC
 
 target_include_directories(TuiBuilder PRIVATE ${CURSES_INCLUDE_DIR})
 target_link_libraries(TuiBuilder PUBLIC ${CURSES_LIBRARIES})
-
-option(TUIBUILDER_BUILD_EXAMPLES "Build example programs" ON)
-if(TUIBUILDER_BUILD_EXAMPLES AND EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/examples/main.cpp)
-    add_executable(example examples/main.cpp)
-    target_link_libraries(example PRIVATE TuiBuilder)
-endif()
