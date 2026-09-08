@@ -1,0 +1,3 @@
+/home/lucas/Documents/TuiBuilder/build/CMakeFiles/TuiBuilder.dir
+/home/lucas/Documents/TuiBuilder/build/CMakeFiles/edit_cache.dir
+/home/lucas/Documents/TuiBuilder/build/CMakeFiles/rebuild_cache.dir

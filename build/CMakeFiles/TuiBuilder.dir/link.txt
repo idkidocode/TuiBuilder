@@ -1,0 +1,2 @@
+/usr/bin/ar qc libTuiBuilder.a CMakeFiles/TuiBuilder.dir/src/MenuBuilder/MenuBuilder.cpp.o
+/usr/bin/ranlib libTuiBuilder.a
