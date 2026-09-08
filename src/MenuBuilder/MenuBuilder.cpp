@@ -31,11 +31,11 @@ namespace TuiBuilder {
             for (size_t i = 0; i < options.size(); i++) {
                 if ((int)i == choice) {
                     attron(A_REVERSE);
-                    mvprintw(i, 0, "Option %zu <<", i);
+                    mvprintw(i, 0, "%s <<", options[i].c_str());
                     attroff(A_REVERSE);
                 } else {
                     attroff(A_REVERSE);
-                    mvprintw(i, 0, "Option %zu", i);
+                    mvprintw(i, 0, "%s", options[i].c_str());
                 }
             }
             refresh();
