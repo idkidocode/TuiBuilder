@@ -51,7 +51,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE TuiBuilder)
 ```
 
-See the repository examples for more [USAGE](docs/examples/).
+See the repository examples for more [USAGE](docs/examples/TuiMenuExample/src/main.cpp).
 
 ## License
 
