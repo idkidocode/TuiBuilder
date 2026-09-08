@@ -32,7 +32,7 @@ cmake --build build
 ```
 
 ## Usage
-See the repository docs for more [USAGE](docs/GettingStarted.md).
+See the repository docs for [USAGE](docs/APIReference.md).
 
 ## License
 
