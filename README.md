@@ -25,6 +25,8 @@ TuiBuilder provides reusable components for creating interactive terminal applic
 git clone https://github.com/idkidocode/TuiBuilder.git
 cd TuiBuilder
 
+mkdir build
+
 cmake -B build
 cmake --build build
 ```
