@@ -65,9 +65,9 @@ So your full main function will look something like this:
 
 int main() {
     //Vector of options and corresponding actions
-    std::vector<std::string> options = {"poo", "Option 2", "Option 3"};
+    std::vector<std::string> options = {"Option 1", "Option 2", "Option 3"};
     std::vector<std::function<void()>> actions = {
-        []() { mvprintw(0, 0, "poo selected"); refresh(); },
+        []() { mvprintw(0, 0, "Option 1 selected"); refresh(); },
         []() { mvprintw(0, 0, "Option 2 selected"); refresh(); },
         []() { mvprintw(0, 0, "Option 3 selected"); refresh(); }
     };
