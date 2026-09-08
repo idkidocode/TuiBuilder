@@ -2,8 +2,7 @@
 
 namespace TuiBuilder {
     ProgressBar::ProgressBar(int x, int y) : x(x), y(y), progress(0.0f) {
-        // Initialize the progress bar at the given position
-        mvprintw(y, x, "[                    ]"); // 20 spaces for the progress bar
+        mvprintw(y, x, "[                    ]"); 
         refresh();
     }
 

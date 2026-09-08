@@ -7,7 +7,7 @@ TuiBuilder provides reusable components for creating interactive terminal applic
 ## Features
 
 * Simple C++ API
-* Built on top of ncurses
+* Built on top of ncurses for ncurses
 * C++17 support
 * CMake support
 * Reusable UI components
