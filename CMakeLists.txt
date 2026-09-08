@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Curses REQUIRED)
 
-# Automatically pick up every .cpp under src/ (each component's implementation)
 file(GLOB_RECURSE TUIBUILDER_SOURCES CONFIGURE_DEPENDS
     ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
 )

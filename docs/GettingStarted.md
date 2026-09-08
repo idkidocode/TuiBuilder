@@ -1,3 +1,7 @@
+# Getting Started With TuiBuilder
+
+To get started with TuiBuilder you must add it to cmake
+```cmake
 #Adding TuiBuilder to cmake
 
 cmake_minimum_required(VERSION 3.15)
@@ -16,3 +20,4 @@ FetchContent_MakeAvailable(TuiBuilder)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE TuiBuilder)
+```
