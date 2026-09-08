@@ -1,0 +1,36 @@
+# TuiBuilder
+
+A simple C++ library for building Terminal User Interfaces (TUIs).
+
+TuiBuilder provides reusable components for creating interactive terminal applications without having to deal with ncurses directly.
+
+## Features
+
+* Simple C++ API
+* Built on top of ncurses
+* C++17 support
+* CMake support
+* Reusable UI components
+* Lightweight and easy to integrate
+
+## Requirements
+
+* C++17 or newer
+* CMake 3.15+
+* ncurses
+
+## Building
+
+```bash
+git clone https://github.com/idkidocode/TuiBuilder.git
+cd TuiBuilder
+
+cmake -B build
+cmake --build build
+```
+
+See the repository examples for more usage.
+
+## License
+
+See [LICENSE](LICENSE).
