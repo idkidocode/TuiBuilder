@@ -31,6 +31,8 @@ cmake --build build
 
 ## Usage
 ```cmake
+#Adding TuiBuilder to cmake
+
 cmake_minimum_required(VERSION 3.15)
 project(TuiBuilderExample)
 
@@ -49,7 +51,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE TuiBuilder)
 ```
 
-See the repository examples for more usage.
+See the repository examples for more [USAGE](docs/examples/).
 
 ## License
 
