@@ -29,6 +29,8 @@ target_link_libraries(${PROJECT_NAME} PRIVATE TuiBuilder)
 ```
 
 ## Menu Builder
+You need ncures initialized for the following code to function as intended
+
 To use the menu build you can create a class like this
 
 ```c++
@@ -54,9 +56,7 @@ menu.SetEndChar("q"); //Will change what button is used to exit the menu, defaul
 
 The Update loop for the menu is:
 ```c++
-menuBuilder.Init(); //Initialize the menu(assuming ncurses is already initialized)
-    menuBuilder.Update(); //Update the menu and wait for user input
-menuBuilder.End(); //End the menu(assuming ncurses doesnt already have an 'endwin()' call))
+menuBuilder.Update(); //Update the menu and wait for user input
 ```
 
 So your full main function will look something like this:
@@ -71,12 +71,19 @@ So your full main function will look something like this:
 
 int main() {
     //Vector of options and corresponding actions
-    std::vector<std::string> options = {"Option 1", "Option 2", "Option 3"};
+    std::vector<std::string> options = {"poo", "Option 2", "Option 3"};
     std::vector<std::function<void()>> actions = {
-        []() { mvprintw(0, 0, "Option 1 selected"); refresh(); },
+        []() { mvprintw(0, 0, "poo selected"); refresh(); },
         []() { mvprintw(0, 0, "Option 2 selected"); refresh(); },
         []() { mvprintw(0, 0, "Option 3 selected"); refresh(); }
     };
+
+    //Init ncurses
+    initscr();
+    cbreak();
+    noecho();
+    curs_set(0);
+    keypad(stdscr, true);
 
     //Intialize the menu builder
     TuiBuilder::MenuBuilder menuBuilder;
@@ -88,9 +95,8 @@ int main() {
     //Settings : Optional
     menuBuilder.SetEndChar("q");
 
-    menuBuilder.Init(); //Initialize the menu(ncurses)
-        menuBuilder.Update(); //Update the menu and wait for user input
-    menuBuilder.End(); //End the menu
+    menuBuilder.Update(); //Update the menu and wait for user input
+    endwin(); //End ncurses
 
     return 0;
 }
